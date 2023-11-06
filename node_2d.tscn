@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://btkc3i6ybtjss"]
+
+[ext_resource type="Texture2D" uid="uid://cuwfclgukpvlv" path="res://Animations/grass.png" id="1_sc106"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_htvei"]
+size = Vector2(8, 8)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Grass" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(235, 269)
+texture = ExtResource("1_sc106")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Grass"]
+shape = SubResource("RectangleShape2D_htvei")
+debug_color = Color(0.972549, 0.0313726, 0.427451, 0.419608)
